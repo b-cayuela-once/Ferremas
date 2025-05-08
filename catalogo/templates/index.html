@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FerreMas+</title>
+<link rel="stylesheet" href="{% static '/css/styles.css' %}">
+</head>
+<body>
+
+  <header id="inicio">
+    <nav class="navbar">
+      <div class="logo">FerreMas+</div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#socios">Socios</a></li>
+        <li><a href="#carrera">Carrera</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button>Login</button>
+        <button>Sign Up</button>
+        <button class="carrito">🛒</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="buscador">
+    <input type="text" id="busqueda-input" placeholder="Busca productos, herramientas, marcas..." oninput="buscar()" />
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo de Productos</h2>
+    <div class="productos" id="productos">
+      <div class="producto">🔧 Llave Inglesa</div>
+      <div class="producto">🔨 Martillo</div>
+      <div class="producto">🪚 Sierra Eléctrica</div>
+      <div class="producto">🪛 Juego de Destornilladores</div>
+    </div>
+    <br>
+    <div class="productos" id="productos">
+      <div class="producto">🔧 Llave Inglesa</div>
+      <div class="producto">🔨 Martillo</div>
+      <div class="producto">🪚 Sierra Eléctrica</div>
+      <div class="producto">🪛 Juego de Destornilladores</div>
+    </div>    
+    <br>
+    <div class="productos" id="productos">
+      <div class="producto">🔧 Llave Inglesa</div>
+      <div class="producto">🔨 Martillo</div>
+      <div class="producto">🪚 Sierra Eléctrica</div>
+      <div class="producto">🪛 Juego de Destornilladores</div>
+    </div>
+    <br>
+    <div class="productos" id="productos">
+      <div class="producto">🔧 Llave Inglesa</div>
+      <div class="producto">🔨 Martillo</div>
+      <div class="producto">🪚 Sierra Eléctrica</div>
+      <div class="producto">🪛 Juego de Destornilladores</div>
+    </div>    
+  </section>
+
+  <section id="socios" class="socios">
+    <h2>Socios</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="{% static 'img/SOCIOS.jpeg' %}" alt="Socio 1" />
+        <p>Ferreteria del Sur</p>
+      </div>
+      <div class="card">
+        <img src="{% static 'img/SOCIOS.jpeg' %}" alt="Socio 2" />
+        <p>Ferreteria del Sur</p>
+      </div>
+      <div class="card">
+        <img src="{% static 'img/SOCIOS.jpeg' %}" alt="Socio 3" />
+        <p>Ferreteria del Sur</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="carrera" class="carrera">
+    <div class="texto">
+      <h2>Nuestra Carrera</h2>
+      <p>Desde nuestros humildes comienzos en un pequeño galpón, Ferremas ha crecido hasta convertirse en uno de los referentes del sector ferretero. Nuestro compromiso con la calidad y el servicio ha sido clave para acompañar a miles de proyectos chilenos.</p>
+    </div>
+    <div class="imagen">
+      <img src="{% static 'img/HISTORIA.png' %}" alt="Historia Ferremas" />
+    </div>
+  </section>
+
+<footer id="contacto">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>📍 Dirección</h4>
+      <p>Av. Herramienta 123<br>Santiago, Chile</p>
+    </div>
+    <div class="footer-column">
+      <h4>📞 Teléfono</h4>
+      <p>+56 9 1234 5678</p>
+    </div>
+    <div class="footer-column">
+      <h4>📧 Email</h4>
+      <p><a href="mailto:contacto@ferremas.cl">contacto@ferremas.cl</a></p>
+    </div>
+    <div class="footer-column">
+      <h4>🕒 Horarios</h4>
+      <p>Lunes a Sábado<br>8:00 a 18:00</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Ferremas. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+  <script src="{% static '/js/scripts.js' %}"></script>
+</body>
+</html>
