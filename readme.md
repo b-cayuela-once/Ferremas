@@ -1,5 +1,6 @@
+______________________________________
 LEEME.
-
+______________________________________
 ARCHIVOS:
 paginaweb:
 Codigo fuente de nuestra Aplicación.
@@ -41,3 +42,18 @@ python manage.py runserver
 
 * Crear Aplicación:
 python manage.py startapp "nombre app"
+
+______________________________________
+COMANDOS DE GITHUB:
+* Estado del repositorio:
+git status
+
+* Agregar todos los archivos modificados:
+git add .
+
+* Comitear:
+git commit -m "Actualizado HTML con nuevos cambios"
+
+* Pushear:
+git push
+
