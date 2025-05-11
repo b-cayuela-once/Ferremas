@@ -4,5 +4,4 @@ from . import views
 urlpatterns = [
 # PAGINA BASE DELEGADA DE URLS.PY PAGINA WEB.
     path('', views.index, name='inicio'),
-    path('contacto/', views.contacto, name='contacto'),
 ]
