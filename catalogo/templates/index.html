@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FerreMas+</title>
-<link rel="stylesheet" href="{% static '/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static '/css/styles.css' %}">
 </head>
 <body>
 
@@ -21,7 +21,9 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
       <div class="nav-actions">
-        <button>Ingresar</button>
+        <a href="{% url 'login' %}">
+          <button>Ingresar</button>
+        </a>
         <button>Unirse</button>
         <button class="carrito">🛒</button>
       </div>
