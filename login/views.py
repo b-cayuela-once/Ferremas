@@ -1,14 +1,16 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .models import Comuna
+from .models import Region, Comuna
 
 #RENDERIZAR LOGIN.
 def login(request):
     return render(request, 'login.html')
 
-#RENDERIZAR SIGNUP.
+# RENDERIZAR SIGNUP.
 def signup(request):
-    return render(request, 'signup.html')
+    regiones = Region.objects.all()  # Obtener todas las regiones desde la base de datos.
+    return render(request, 'signup.html', {'regiones': regiones})
+
 
 # CARGAR COMUNAS EN BASE AL TIPO DE REGIÓN.
 def cargar_comunas(request):

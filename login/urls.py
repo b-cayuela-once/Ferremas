@@ -5,5 +5,5 @@ urlpatterns = [
 # PAGINA BASE DELEGADA DE URLS.PY PAGINA WEB.
     path('login/', views.login, name='login'),
     path('signup/', views.signup, name='signup'),
-    path('ajax/cargar-comunas/', views.cargar_comunas, name='cargar_comunas'),
+    path('cargar_comunas/', views.cargar_comunas, name='cargar_comunas'),
 ]
