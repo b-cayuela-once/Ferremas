@@ -60,3 +60,30 @@ git commit -m "Actualizado HTML con nuevos cambios"
 * Pushear:
 git push
 
+______________________________________
+PASO A PASO:
+* Crear directorio (carpeta donde clonaste el repositorio)
+
+* Clonar repositorio:
+git clone https://github.com/b-cayuela-once/Ferremas.git
+
+* Actualizar pip
+python.exe -m pip install --upgrade pip
+
+* Crear entorno virtual:
+python -m venv venv
+
+* Activar entorno virtual:
+.\venv\Scripts\Activate.ps1
+
+* Instalar dependencias (requirements.txt)
+pip install -r requirements.txt
+
+* Realizar migraciones pendientes.
+python manage.py makemigrations
+
+* Migrar:
+python manage.py migrate
+
+* Subir datos a la base de datos.
+python cargar_datos.py
