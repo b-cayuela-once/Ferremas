@@ -43,6 +43,9 @@ python manage.py runserver
 * Crear Aplicación:
 python manage.py startapp "nombre app"
 
+* Cargar datos: (guarda regiones, comunas, tipo de usuarios en la base de datos)
+python cargar_datos.py
+
 ______________________________________
 COMANDOS DE GITHUB:
 * Estado del repositorio:
