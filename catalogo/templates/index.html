@@ -21,17 +21,26 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="{% url 'login' %}">
-          <button>Ingresar</button>
-        </a>
-        <a href="{% url 'signup' %}">
-        <button>Unirse</button>
-        </a>
+        {% if user.is_authenticated %}
+          <!-- Si el usuario está autenticado, mostrar el botón de Cerrar sesión -->
+          <form method="POST" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Cerrar sesión</button>
+          </form>
+        {% else %}
+          <!-- Si el usuario no está autenticado, mostrar los botones de Iniciar sesión y Unirse -->
+          <a href="{% url 'login' %}">
+            <button>Ingresar</button>
+          </a>
+          <a href="{% url 'signup' %}">
+            <button>Unirse</button>
+          </a>
+        {% endif %}
         <button class="carrito">🛒</button>
       </div>
     </nav>
   </header>
-
+  
   <section class="buscador">
     <input type="text" id="busqueda-input" placeholder="Busca productos, herramientas, marcas..." oninput="buscar()" />
   </section>

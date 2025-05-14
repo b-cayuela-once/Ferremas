@@ -10,7 +10,7 @@
 <body>
   <div class="login-container">
     <h2>Crear Cuenta</h2>
-    <form method="POST" action="{% url 'login' %}">
+      <form method="POST" action="{% url 'signup' %}">
         {% csrf_token %}
         <div class="form-group">
           <label for="nombre">Nombre</label>
