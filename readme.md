@@ -17,7 +17,17 @@ Nos ayuda a poder ejecutar comandos administrativos, por ejemplo, ejecutar un se
 
 requirements.txt:
 Dependencias/Librerias del proyecto.
+______________________________________
+// CLONAR EL REPOSITORIO DESDE 0.
 
+(Posterior a la instalación de GIT)
+
+* Configurar Git:
+git config --global user.name "Tu Nombre"
+git config --global user.email "tunombre@ejemplo.com"
+
+* Clonar repositorio:
+git clone https://github.com/b-cayuela-once/Ferremas.git
 ______________________________________
 COMANDOS ENTORNO:
 // DESPUES DE CLONAR EL REPOSITORIO.
